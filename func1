@@ -1,0 +1,13 @@
+str1=input("Please enter a string ")
+most_frequent={}
+
+
+for i in str1:
+    if i in most_frequent:
+        most_frequent[i]+=1
+
+    else:
+        most_frequent[i]=1
+y=sorted(most_frequent,key=most_frequent.get,reverse=True)
+for i in y:
+    print(i,"=",most_frequent[i])
